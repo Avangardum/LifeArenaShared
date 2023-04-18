@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeArenaShared", "LifeArenaShared\LifeArenaShared.csproj", "{D3CEB01C-DDC9-40E0-A42C-60FDBB17C21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeArenaSharedTests", "LifeArenaSharedTests\LifeArenaSharedTests.csproj", "{5EF551A4-3065-4B8B-AD4E-7746E3AB72E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3CEB01C-DDC9-40E0-A42C-60FDBB17C21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CEB01C-DDC9-40E0-A42C-60FDBB17C21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CEB01C-DDC9-40E0-A42C-60FDBB17C21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CEB01C-DDC9-40E0-A42C-60FDBB17C21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF551A4-3065-4B8B-AD4E-7746E3AB72E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF551A4-3065-4B8B-AD4E-7746E3AB72E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF551A4-3065-4B8B-AD4E-7746E3AB72E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF551A4-3065-4B8B-AD4E-7746E3AB72E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
