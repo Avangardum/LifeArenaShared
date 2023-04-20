@@ -6,5 +6,5 @@
 public interface ILivingCellsArrayPreserializer
 {
     List<string> Preserialize(bool[,] livingCells);
-    bool[,] Despreserialize(List<string> preserializedLivingCells);
+    bool[,] Depreserialize(List<string> preserializedLivingCells);
 }

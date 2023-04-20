@@ -29,7 +29,7 @@ public class LivingCellsArrayPreserializer : ILivingCellsArrayPreserializer
         return result;
     }
 
-    public bool[,] Despreserialize(List<string> preserializedLivingCells)
+    public bool[,] Depreserialize(List<string> preserializedLivingCells)
     {
         var result = new bool[preserializedLivingCells[0].Length, preserializedLivingCells.Count];
         for (var y = 0; y < preserializedLivingCells.Count; y++)
