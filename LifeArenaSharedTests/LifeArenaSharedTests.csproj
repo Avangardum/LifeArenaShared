@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>LifeArena.Shared.Tests</RootNamespace>
+        <RootNamespace>Avangardum.LifeArena.Shared.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace LifeArena.Shared;
+﻿namespace Avangardum.LifeArena.Shared;
 
-public record GameStateResponse(object LivingCells, int Generation, TimeSpan TimeUntilNextGeneration, 
+public record GameStateResponse(List<string> LivingCells, int Generation, TimeSpan TimeUntilNextGeneration, 
     int CellsLeft, int MaxCellsPerPlayerPerGeneration);

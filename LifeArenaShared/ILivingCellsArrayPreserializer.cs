@@ -1,10 +1,10 @@
-﻿namespace LifeArena.Shared;
+﻿namespace Avangardum.LifeArena.Shared;
 
 /// <summary>
-/// Converts a 2D array of booleans to a serializable object and vice versa.
+/// Converts a 2D array of booleans to a serializable list of strings and vice versa.
 /// </summary>
 public interface ILivingCellsArrayPreserializer
 {
-    object Preserialize(bool[,] livingCells);
-    bool[,] Despreserialize(object preserializedLivingCells);
+    List<string> Preserialize(bool[,] livingCells);
+    bool[,] Despreserialize(List<string> preserializedLivingCells);
 }

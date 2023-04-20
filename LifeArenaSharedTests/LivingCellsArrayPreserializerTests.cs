@@ -1,4 +1,4 @@
-﻿namespace LifeArena.Shared.Tests;
+﻿namespace Avangardum.LifeArena.Shared.Tests;
 
 [TestFixture]
 public class LivingCellsArrayPreserializerTests

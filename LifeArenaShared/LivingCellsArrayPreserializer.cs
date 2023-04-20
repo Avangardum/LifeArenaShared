@@ -1,13 +1,13 @@
 ﻿using System.Text;
 
-namespace LifeArena.Shared;
+namespace Avangardum.LifeArena.Shared;
 
 public class LivingCellsArrayPreserializer : ILivingCellsArrayPreserializer
 {
     const char LivingCellChar = '0';
     const char DeadCellChar = '.';
     
-    public object Preserialize(bool[,] livingCells)
+    public List<string> Preserialize(bool[,] livingCells)
     {
         var result = new List<string>();
         for (var y = livingCells.GetLength(1) - 1; y >= 0; y--)
@@ -29,13 +29,12 @@ public class LivingCellsArrayPreserializer : ILivingCellsArrayPreserializer
         return result;
     }
 
-    public bool[,] Despreserialize(object preserializedLivingCells)
+    public bool[,] Despreserialize(List<string> preserializedLivingCells)
     {
-        var preserializedLivingCellsList = (List<string>)preserializedLivingCells;
-        var result = new bool[preserializedLivingCellsList[0].Length, preserializedLivingCellsList.Count];
-        for (var y = 0; y < preserializedLivingCellsList.Count; y++)
+        var result = new bool[preserializedLivingCells[0].Length, preserializedLivingCells.Count];
+        for (var y = 0; y < preserializedLivingCells.Count; y++)
         {
-            var row = preserializedLivingCellsList[preserializedLivingCellsList.Count - 1 - y];
+            var row = preserializedLivingCells[preserializedLivingCells.Count - 1 - y];
             for (var x = 0; x < row.Length; x++)
             {
                 result[x, y] = row[x] == LivingCellChar;
